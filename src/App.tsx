@@ -11,16 +11,20 @@ export default function App() {
   useEffect(() => {
     const update = (time: number) => lenisRef.current?.lenis?.raf(time * 1000);
     gsap.ticker.add(update);
+
     return () => {
       gsap.ticker.remove(update);
     };
   }, []);
 
   return (
-    <main className='min-h-screen'>
+    <>
       <ReactLenis root options={{ autoRaf: false }} ref={lenisRef} />
-      {/* <Intro /> */}
-      <Gallery />
-    </main>
+
+      <main className='min-h-screen'>
+        {/* <Intro /> */}
+        <Gallery />
+      </main>
+    </>
   );
 }
