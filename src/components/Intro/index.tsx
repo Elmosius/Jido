@@ -45,12 +45,10 @@ export default function Intro() {
         },
         0
       );
-
-      
   }, []);
 
   return (
-    <section className='h-screen w-screen bg-black'>
+    <section className='h-screen bg-black '>
       <h1 ref={titleRef} className='absolute inset-0 flex items-center justify-center font-semibold text-white text-8xl z-10 uppercase'>
         Ji do
       </h1>
