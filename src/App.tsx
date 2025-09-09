@@ -22,7 +22,7 @@ export default function App() {
       <ReactLenis root options={{ autoRaf: false }} ref={lenisRef} />
 
       <main className='min-h-screen'>
-        {/* <Intro /> */}
+        <Intro />
         <Gallery />
       </main>
     </>
